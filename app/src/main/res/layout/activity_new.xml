@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewEntryActivity"
+    android:background="@color/colorRed"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryName" />
+
+    <EditText
+        android:id="@+id/entryName"
+        android:layout_width="match_parent"
+        android:hint="@string/buton_nameInput"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryWeight" />
+
+    <EditText
+        android:id="@+id/entryWeight"
+        android:layout_width="match_parent"
+        android:hint="@string/buton_weightInput"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryCp" />
+
+    <EditText
+        android:id="@+id/entryCp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/entryCpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryCp" >
+
+
+    <RadioButton
+        android:id="@+id/entryCpStrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryCpStrong"
+        android:checked="true"/>
+
+    <RadioButton
+        android:id="@+id/entryCpMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryCpMedium" />
+
+    <RadioButton
+        android:id="@+id/entryCpWeak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryCpWeak"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryAbilities"/>
+
+    <CheckBox
+        android:id="@+id/entryAbilitiesUltimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryAbilitiesUltimate"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/entryAbilitiesFighting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryAbilitiesFighting"/>
+
+    <CheckBox
+        android:id="@+id/entryAbilitiesRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryAbilitiesRange"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entryType" />
+
+    <Spinner
+        android:id="@+id/entryType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/entrySubmit"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_width="250dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="@string/entrySubmit"/>
+
+
+</LinearLayout >
